@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function diff(a) {
+			var output=0;
+			for (var i=1;i<a.length;
+				i++)
+			{
+				output += Math.abs(a[i]-a[i-1]);
+			}
+			return output;
+			// body...
+		}
+
+		alert(diff([1,2,3,4,6,-8]));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

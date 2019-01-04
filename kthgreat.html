@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function great(a,k)
+		{
+			for(var i=0;i<k;i++)
+			{
+				var ind=i;
+				temp=a[i];
+
+				for(var j=i+1;j<a.length;j++)
+				{
+					if(a[j]>a[ind])
+					{
+						ind=j;
+					}
+				}
+				a[i]=a[ind];
+				a[ind]=temp;
+			}
+			return a[k-1];
+		}
+		alert(great([1,2,3,4,5],2));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function break(u) {
+		    var d = u.split("://")
+		    var p = d[0];
+		    d = d[1].split(".com");
+		    var domain = d[0];
+		    d = d[1].split("/");
+
+		    if(d[1]){
+		        return [p,domain,d[1]];
+		    }
+
+		    return [p,domain];
+		}
+
+		var u = "https://www.w3resource.com/javascript-exercises/";
+		alert("Original address: "+u);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

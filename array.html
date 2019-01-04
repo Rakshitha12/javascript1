@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function array(a,b) {
+			for(var i=0;i<a.length;i++)
+			{
+				for(var j=i;j<a.length;j++)
+				{
+					var output=true;
+					temp=a[i];
+					a[i]=a[j];
+					a[j]=temp;
+					for(var k=0;k<a.length;k++)
+					{
+						if(a[k]!==b[k])
+						{
+							output=false;
+							break;
+						}
+					}
+					if(output)
+					{
+						return true;
+					}
+					a[j]=a[i];
+					a[i]=temp;
+				}
+			}
+			return false;
+			// body...
+		}
+		alert(array([10,20,30],[10,20,30]));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

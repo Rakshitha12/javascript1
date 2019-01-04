@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function seq(n) {
+			if(n.length===1)
+			{
+				return true;
+			}
+			const m=n[1]-n[0];
+			for(let i=0;i<n.length-1;i++)
+			{
+				if(m*(n[i+1]-n[i])<=0)
+				{
+					return false;
+				}
+			}
+			return true;
+			// body...
+		}
+		alert(seq([1,2,3]));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

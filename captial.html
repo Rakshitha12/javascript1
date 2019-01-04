@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function cap(words) {
+			var words=words.split(" ");
+			for(var i=0,x=words.length;i<x;i++)
+			{
+				words[i]=words[i][0].toUpperCase()+words[i].substr(1);
+			}
+			return words.join(" ");
+		}
+		alert(cap("the written code"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function sequence(n) {
+			var m=(''+num).split('');
+			for(var i=0;i<m.length-1;i++)
+			{
+				if(parseInt(m[i])>=parseInt(m[i+1]))
+				{
+					return false;
+
+				}
+			}
+			return true;
+			// body...
+		}
+		alert(sequence(123));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

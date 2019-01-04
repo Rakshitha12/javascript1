@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function stringfirstlast(str)
+		{
+			if(str.length<=1)
+			{
+				return str;
+			}
+			else{
+				char=str.substring(1,str.length-1);
+				char1=(str.charAt(str.length-1))+char+str.charAt(0);
+				return char1;
+			}
+		}
+
+		alert(stringfirstlast('a'));
+		alert(stringfirstlast('ab'));
+		alert(stringfirstlast('abc'));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

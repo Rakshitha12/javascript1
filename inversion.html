@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function inv(a) {
+			var first=0;
+			for(var i=0;i<a.length;i++)
+			{
+				for(var j=i+1;j<a.length;j++)
+				{
+					if(a[i]>a[j])
+					{
+						first++;
+					}
+				}
+			}
+			return first;
+			// body...
+		}
+		alert(inv([1,2,3,4]));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

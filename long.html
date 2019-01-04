@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function long(a) {
+			var m=a[0].length;
+			var out=a[0];
+			for(var i=1;i<a.length;i++)
+			{
+				var mi=a[i].length;
+				if(mi<m)
+				{
+					out=a[i];
+					m=mi;
+				}
+			}
+			return out;
+			// body...
+		}
+		alert(long(["ab","a","abcd"]));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

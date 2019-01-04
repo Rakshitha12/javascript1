@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function app(a) {
+			var arr=[];
+			out=0;
+			for(var i=0;i<10;i++)
+			{
+				arr.push(0);
+			}
+			for(var i=0;i<a.length;i++)
+			{
+				arr[a[i]-1]++;
+				if(arr[a[i]-1]>arr[out])
+				{
+					out=a[i]-1;
+
+				}
+			}
+			return out+1;
+			// body...
+		}
+		alert(app([1,2,3,4,1,2,9]));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

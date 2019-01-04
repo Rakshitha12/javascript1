@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function string(pt) {
+
+			const string1 = pt.replace(/[^p]/g,"");
+			const string2 = pt.replace(/[^t]/g, "");
+			const first = string1.length;
+			const second = string2.length;
+
+			return first === second;
+			// body...
+		}
+
+		alert(string("pt"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function arrayint(a) {
+			var output=0;
+			for(var i=0;i<a.length;i++)
+			{
+				for(var j=i+1;j<a.length;j++)
+				{
+					if(a[i]%a[j]===0 || a[j]%a[i]===0)
+					{
+						output++;
+					}
+				}
+			}
+			return output;
+			// body...
+		}
+		alert(arrayint([1,2,3]));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

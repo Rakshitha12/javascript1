@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function diff(a,n) {
+			var value=-1;
+			for(var i=0;i<a.length;i++)
+			{
+				for(var j=i+1;j<a.length;j++)
+				{
+					var m=Math.abs(a[i]-a[j]);
+					if(m<=n)
+					{
+						value=Math.max(value,m);
+					}
+				}
+			}
+			return value;
+			// body...
+		}
+		alert(diff([1,2,3,5],10));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

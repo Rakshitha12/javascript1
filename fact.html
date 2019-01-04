@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function fact(n) {
+			let output=0;
+			for(let i=5;i<=n;i+=5)
+			{
+				let num=i;
+				while(num%5===0)
+				{
+					num/=5;
+					output++;
+				}
+			}
+			return output;
+			// body...
+		}
+
+		alert(fact(6));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function matrix(m)
+		{
+			for(var i=0;i<m.length;i++)
+			{
+				for(var j=0;j<m[0].length;j++)
+				{
+					if(j>i&&m[i][j]!==0)
+					{
+						return false;
+					}
+				}
+			}
+			return true;
+		}
+		alert(matrix([[1,0,0],[2,0,0],[0,3,3]]));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

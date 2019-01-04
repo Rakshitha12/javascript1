@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function sub(a) {
+			var m=-1;
+			var temp;
+			for(var i=0;i<a.length-1;i++)
+			{
+				temp=Math.abs(a[i]-a[i+1]);
+				m=Math.max(m,temp);
+
+			}
+			return m;
+			// body...
+		}
+
+		alert(sub([1,2,3,4,5,6]));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

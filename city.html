@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function city(word) {
+			if(word.length>=3 && ((word.substring(0,3)=='los')||(word.substring(0,3)=='new')))
+			{
+				return word;
+			}
+
+			return '';
+			// body...
+		}
+
+		alert(city("new york"));
+		alert(city("india"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

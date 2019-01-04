@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function captial(n) {
+		    var s = "";
+		    for (var i = 0; i < n.length; i++) {
+		        if (/[A-Z]/.test(n[i])) s += n[i].toLowerCase();
+		        else s += n[i].toUpperCase();
+		    }
+		    return s;
+		}
+
+		alert(captial("javascript"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
