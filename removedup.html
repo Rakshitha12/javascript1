@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function remove(str) {
+		  var arr = str.split("");
+		  var result = [];
+
+		  for (var i = 0; i < arr.length; i++) {
+		    if (str.indexOf(arr[i]) === str.lastIndexOf(arr[i]))
+		      result.push(arr[i]);
+		    }
+
+		  return result.join("");
+		}
+		alert(remove("abcdabc"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

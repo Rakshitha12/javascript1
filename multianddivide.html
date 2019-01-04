@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function multiply()
+		{
+			value1 = document.getElementById("firstValue").value;
+			value2 = document.getElementById("secondValue").value;
+			document.getElementById("calculatedValue").innerHTML = value1*value2;
+		}
+
+		function divide()
+		{
+			value1 = document.getElementById("firstValue").value;
+			value2 = document.getElementById("secondValue").value;
+			document.getElementById("calculatedValue").innerHTML = value1/value2;
+		}
+	</script>
+</head>
+<body>
+	<form>
+		first value:<input type="text" id="firstValue"/><br>
+		second value:<input type="text" id="secondValue"/>
+		<input type="button" onClick="multiply()" value="multiply">
+		<input type="button" onClick="divide()" value="divide">
+	</form>
+	<p>The value is :<br>
+	<span id = "calculatedValue"></span>
+	</p>
+
+</body>
+</html>

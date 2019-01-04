@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function path(main) {
+		  var parts = main.split('/'),
+		      n = [],
+		      length = 0;
+		  for (var i = 0; i < parts.length; i++) {
+		    var part = parts[i];
+		    if (part === '.' || part === '' || part === '..') {
+		      if (part === '..' && length > 0) {
+		        length--;
+		      }
+		      continue;
+		    }
+		    n[length++] = part;
+		  }
+
+		  if (length === 0) {
+		    return '/';
+		  }
+
+		  var result = '';
+		  for (var i = 0; i < length; i++) {
+		    result +=  '/'+n[i] ;
+		  }
+
+		  return result;
+		}
+		alert(path("/home/var/./www/../html//sql/"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

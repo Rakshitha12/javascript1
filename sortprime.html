@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function sort(n) {
+			var a=[];
+			b=[];
+			for(var i=0;i<=n;i++)
+			{
+				b.push(true);
+			}
+			for(var i=2;i<=n;i++)
+			{
+				if(b[i])
+				{
+					a.push(i);
+					for(var j=1;i*j<=n;j++)
+					{
+						b[i*j]=false;
+
+					}
+				}
+			}
+
+			return a;
+			// body...
+		}
+		alert(sort(5));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

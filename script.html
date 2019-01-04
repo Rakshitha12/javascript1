@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function check(string)
+		{
+			if(string.length < 6)
+			{
+				return string;
+			}
+			let scriptstring=string;
+
+			if(string.substring(10,4) == 'script')
+			{
+				scriptstring = string.substring(0,4) + string.substring(10,string.length);
+			}
+			return scriptstring;
+			
+		}
+		alert(check("JavaScript"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

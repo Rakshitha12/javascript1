@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function sort(a) {
+			for (var i = 0; i < a.length; i++) {
+				for (var j = i + 1; j < a.length; j++) {
+					if (a[i].length > a[j].length) {
+						var m = a[i];
+						a[i] = a[j];
+						a[j] = m;
+					}
+				}
+			}
+			return a;
+		}
+		var a = ["xyz","acd","aa","bb","zzz","", "a","b"];
+		alert("Original array: "+ a+"\n");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

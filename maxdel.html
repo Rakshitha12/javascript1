@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function max1(n) {
+			var output=0;
+			n1=[];
+			while(n)
+			{
+				n1.push(n%10);
+				n=Math.floor(n/10);
+			}
+			for(var n1i=0;n1i<n1.length;n1i++)
+			{
+				var n=0;
+				for(var i=n1.length-1;i>=0;i--)
+				{
+					if(i!==n1i)
+					{
+						n=n*10+n1[i];
+					}
+				}
+				output=Math.max(n,output);
+			}
+			return output;
+			// body...
+		}
+		alert(max1(100));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

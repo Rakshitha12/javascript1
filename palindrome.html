@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function palindrome(a) {
+			let flag;
+			for(let i=a.length;;i++)
+			{
+				flag=true;
+			
+				for(var j=0;j<i-j-1;j++)
+				{
+					if(i-j-1<a.length && a[j]!=a[i-j-1])
+					{
+						flag=false;
+						break;
+					}
+				}
+				if(flag)
+				{
+					for( var j=a.length;j<i;j++)
+					{
+						a += a[i-j-1];
+					}
+					return a;
+				}
+			
+			}// body...
+		}
+		alert(palindrome("abcddcca"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function startjava(start)
+		{
+			if(start.length < 4)
+			{
+				return false;
+			}
+			starting=start.substring(0,4);
+			if(starting == 'java')
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		alert(startjava('javascript'));
+		alert(startjava('java'));
+		alert(startjava('python'));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

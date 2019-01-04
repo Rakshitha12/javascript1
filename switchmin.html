@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function switchmin(str) {
+			var a=0;
+			var b=0;
+
+			for(var i=0;i<str.length;i++)
+			{
+				if(/[A-Z]/.test(str[i]))
+				{
+					a++;
+
+				}else b++;
+
+			}
+
+			if(a>b) 
+				{
+					return str.toLowerCase();
+				}
+			return str.toUpperCase();
+
+			// body...
+		}
+		alert(switchmin("javascript"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

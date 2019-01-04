@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function rearrange(a1,a2) {
+			var first=a1.split(''),
+			second=a2.split(''),
+			output=true;
+
+			first.sort();
+			second.sort();
+			for(var i=0;i<Math.max(first.length,second.length);i++)
+			{
+				if(first[i]!==second[i])
+				{
+					output=false;
+				}
+			}
+			return output; 			// body...
+		}
+		alert(rearrange("abc","cba"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

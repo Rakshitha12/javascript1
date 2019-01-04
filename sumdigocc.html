@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function sum(s) {
+		  var d = 0;
+
+		  for (var i = 0; i < s.length; i++)
+		  {
+
+		    if (/[0-9]/.test(s[i])) d += parseInt(s[i]);
+		  }
+		  return d;
+		}
+
+		alert(sum("abcd12efg9"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function prime(num) {
+    for (let i = num + 1;; i++) {
+        let isPrime = true;
+        for (let d = 2; d * d <= i; d++) {
+            if (i % d === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) {
+            return i;
+        }
+    }
+}
+
+alert(prime(7));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

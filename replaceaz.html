@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function replaceaz(word) {
+			var char = word.split("");
+			for(var i=0;i<char.length;i++)
+			{
+				var n=char[i].charCodeAt()-'a'.charCodeAt();
+				n=(n+1)%26;
+				char[i]=String.fromCahrCode(n+'a'.charCodeAt());
+
+			}
+			return char.join("");
+
+			// body...
+			
+		}
+
+		alert(replaceaz("abcd"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

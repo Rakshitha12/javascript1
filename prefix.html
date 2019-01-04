@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function prefix(arr) {
+			  var new_arr = [];
+			  for (var i = 0; i < arr.length; i++) {
+			    new_arr[i] = 0;
+			    for (var j = 0; j < i + 1; j++) {
+			      new_arr[i] += arr[j];
+			    }
+			  }
+			  return new_arr;
+			}
+
+			alert(prefix([1,2,3,4,5]));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

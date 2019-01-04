@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function change(str1) {
+			var result = [];
+			for (var i = 0; i < str1.length; i++)
+		    {
+				var char = str1.charCodeAt(i) - 'a'.charCodeAt(0),
+					change = 25 - char + 'a'.charCodeAt(0);
+				result.push(String.fromCharCode(change));
+			}
+			return result.join("");
+		}
+		alert(change("abcxyz"));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function carry(a,b) {
+
+			var sum = 0;
+			x=1;
+			while (a>0 && b >0)
+			{
+				sum += x *((a+b)%10);
+				a=Math.floor(a/10);
+				b=Math.floor(b/10);
+				x*=10;
+
+			}
+			return result;
+			// body...
+		}
+		alert(carry(30,40));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
