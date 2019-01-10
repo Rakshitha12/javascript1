@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		  function merge(l,r) 
+{
+	var i = 0;
+	var j = 0;
+	var results = [];
+
+	while (i < l.length || j < r.length) {
+		if (i === l.length) {
+			results.push(r[j]);
+			j++;
+		} 
+      else if (j === r.length || l[i] <= r[j]) {
+			results.push(l[i]);
+			i++;
+		} else {
+			results.push(r[j]);
+			j++;
+		}
+	}
+	return results;
+}
+
+console.log(merge([1,3,4], [3,7,9]));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

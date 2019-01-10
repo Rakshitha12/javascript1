@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		// Selection sort with O(n^2) time complexity
+
+function selection(a, c) {
+
+  function compare(a, b) {
+   return a - b;
+   } 
+  var min = 0;
+  var index = 0;
+  var temp = 0;
+
+  c = c || compare;
+
+  for (var i = 0; i < a.length; i += 1) {
+    index = i;
+    min = a[i];
+
+    for (var j = i + 1; j < a.length; j += 1) {
+      if (c(min, a[j]) > 0) {
+        min = a[j];
+        index = j;
+      }
+    }
+
+    temp = a[i];
+    a[i] = min;
+    a[index] = temp;
+  }
+
+  //return sorted a
+  return a;
+}
+
+alert(selection([3, 0, 2, 5, -1, 4, 1], function(a, b) { return a - b; })); 
+alert(selection([3, 0, 2, 5, -1, 4, 1], function(a, b) { return b - a; }));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

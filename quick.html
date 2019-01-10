@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function sort(orgarr) {
+	if (orgarr.length <= 1) { 
+		return orgarr;
+	} else {
+
+		var left = [];
+		var right = [];
+		var newArray = [];
+		var pivot = orgarr.pop();
+		var length = orgarr.length;
+
+		for (var i = 0; i < length; i++) {
+			if (orgarr[i] <= pivot) {
+				left.push(orgarr[i]);
+			} else {
+				right.push(orgarr[i]);
+			}
+		}
+
+		return newArray.concat(sort(left), pivot, sort(right));
+	}
+}
+
+var myArray = [3, 0, 2, 5, -1, 4, 1 ];
+
+console.log("Original array: " + myArray);
+var sortedArray = sort(myArray);
+console.log("Sorted array: " + sortedArray);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

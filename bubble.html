@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function swap(a, one, two){
+    var temp = a[one];
+    a[one] = a[two];
+    a[two] = temp;
+}
+
+function bubble_Sort(a){
+
+    var len = a.length,
+        i, j, stop;
+
+    for (i=0; i < len; i++){
+        for (j=0, stop=len-i; j < stop; j++){
+            if (a[j] > a[j+1]){
+                swap(a, j, j+1);
+            }
+        }
+    }
+
+    return a;
+}
+console.log(bubble_Sort([3, 0, 2, 5, -1, 4, 1]));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
