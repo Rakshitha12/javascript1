@@ -3,35 +3,20 @@
 <head>
 	<title></title>
 	<script type="text/javascript">
-		function array(a,b) {
-			for(var i=0;i<a.length;i++)
-			{
-				for(var j=i;j<a.length;j++)
+		var value=function(a,n) {
+			if(a==null)
 				{
-					var output=true;
-					temp=a[i];
-					a[i]=a[j];
-					a[j]=temp;
-					for(var k=0;k<a.length;k++)
-					{
-						if(a[k]!==b[k])
-						{
-							output=false;
-							break;
-						}
-					}
-					if(output)
-					{
-						return true;
-					}
-					a[j]=a[i];
-					a[i]=temp;
+					return void 0;
 				}
-			}
-			return false;
+				if(n==null)
+				{
+					return a[a.length-1];
+
+				}
+				return a.slice(Math.max(a.length-n,0));
 			// body...
-		}
-		alert(array([10,20,30],[10,20,30]));
+		};
+		alert(value([7,8,9,0,-3]));
 	</script>
 </head>
 <body>

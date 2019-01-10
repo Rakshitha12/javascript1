@@ -3,15 +3,23 @@
 <head>
 	<title></title>
 	<script type="text/javascript">
-		function middle(x,y) {
+		var first = (a,n)=>{
+			if(a==null)
+			{
+				return void 0;
+			}
+			if(n==null)
+			{
+				return  a[0];
+			}
+			if(n<0)
+			{
+				return [];
+				return a.slice(0,n);
+			}
+		};
 
-			var arr=[];
-			arr.push(x[1],y[1]);
-			return arr;
-			// body...
-		}
-
-		alert(middle([2,4,5],[4,5,3]));
+		alert(first([2,4,6,-2,0]));
 	</script>
 </head>
 <body>
