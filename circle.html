@@ -3,27 +3,27 @@
 <head>
 	<title></title>
 	<script type="text/javascript">
-		function draw()
-  {
-		var canvas = document.getElementById('cir');
-		if (canvas.getContext)
-		{
-			var cir = canvas.getContext('2d'); 
-			var X = canvas.width / 2;
-			var Y = canvas.height / 2;
-			var R = 45;
-			cir.beginPath();
-			cir.arc(X, Y, R, 0, 2 * Math.PI, false);
-			cir.lineWidth = 3;
-			cir.strokeStyle = '#FF0000';
-			cir.stroke();
-		}
-	}
+		function circle(radius)
+			{
+			    this.radius = radius;
+			 
+			    this.area = function () 
+			    {
+			        return Math.PI * this.radius * this.radius;
+			    };
+			
+			    this.perimeter = function ()
+			    {
+			        return 2*Math.PI*this.radius;
+			    };
+			}
+			var c = new circle(3);
+			console.log('Area =', c.area().toFixed(2));
+			console.log('perimeter =', c.perimeter().toFixed(2));
 
 	</script>
 </head>
-<body onload="draw();">
-  <canvas id="circle" width="150" height="150"></canvas>
+<body>
 
 </body>
 </html>

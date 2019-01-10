@@ -3,16 +3,24 @@
 <head>
 	<title></title>
 	<script type="text/javascript">
-		color = ["red","blue","green","yellow"];
-		document.write(color.toString()+"\n");
-		
-		document.write(color.join()+"\n");
-	
-		document.write(color.join('+')+"\n");
+		function colorout()
+			{
+			var x=document.getElementById("color");
+			x.remove(x.selectedIndex);
+			}
 
 	</script>
 </head>
 <body>
+	<form> 
+<select id="color"> 
+<option>Red</option> 
+<option>Green</option> 
+<option>White</option> 
+<option>Black</option> 
+</select> 
+<input type="button" onclick="colorout()" value="Select and Remove"> 
+</form>
 
 </body>
 </html>

@@ -3,28 +3,26 @@
 <head>
 	<title></title>
 	<script type="text/javascript">
-		function swap(a, one, two){
-    var temp = a[one];
-    a[one] = a[two];
-    a[two] = temp;
-}
+		Array.prototype.bubbleSort = function() 
+			{
+			var s = false;
+			 while (!s) 
+			 {
+			    s = true;
+			    for (var i = 0; i < this.length - 1; i++) 
+			    {
+			      if (this[i] > this[i+1]){
+			        var x = this[i+1];
+			        this[i+1] = this[i];
+			        this[i] = x;
+			        s = false;
+			      }
+			    }
+			  }
+			  return this;
+			};
 
-function bubble_Sort(a){
-
-    var len = a.length,
-        i, j, stop;
-
-    for (i=0; i < len; i++){
-        for (j=0, stop=len-i; j < stop; j++){
-            if (a[j] > a[j+1]){
-                swap(a, j, j+1);
-            }
-        }
-    }
-
-    return a;
-}
-console.log(bubble_Sort([3, 0, 2, 5, -1, 4, 1]));
+document.write([6,4,0, 3,-2,1].bubbleSort());
 
 	</script>
 </head>

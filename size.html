@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function getSize()
+			{
+			var w = document.documentElement.clientWidth;
+			var h = document.documentElement.clientHeight;
+			        
+			// put the result into a h1 tag
+			 document.getElementById('wh').innerHTML = "<h1>Width: " + w + " â€¢ Height: " + h + "</h1>";
+			}
+
+	</script>
+</head>
+<body>
+	<body onload="getSize()" onresize="getSize()">
+	<div id="wh"> 
+
+</body>
+</html>

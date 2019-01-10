@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+			var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+
+			var Avgmarks = 0;
+
+			for (var i=0; i < students.length; i++) 
+			{
+			        Avgmarks += students[i][1];
+			        var avg = (Avgmarks/students.length);
+			}
+
+			console.log("Average grade: " + (Avgmarks)/students.length);
+
+			        if (avg < 60)
+			        {
+			            alert("Grade : F");      
+			        } 
+			        else if (avg < 70) 
+			        {
+			            alert("Grade : D"); 
+			        } 
+			        else if (avg < 80) 
+			        {
+			            alert("Grade : C"); 
+			        } 
+			        else if (avg < 90) 
+			        {
+			            alert("Grade : B"); 
+			        } 
+			        else if (avg < 100) 
+			        {
+			            alert("Grade : A"); 
+					}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

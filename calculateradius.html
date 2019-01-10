@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function volume_sphere()
+			 {
+			  var volume;
+			  var radius = document.getElementById('radius').value;
+			  radius = Math.abs(radius);
+			  volume = (4/3) * Math.PI * Math.pow(radius, 3);
+			  volume = volume.toFixed(4);
+			  document.getElementById('volume').value = volume;
+			  return false;
+			 } 
+			window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+
+	</script>
+</head>
+<body>
+	<form action="" method="post" id="MyForm">
+	<label for="radius">Radius</label><input type="text" name="radius" id="radius" required>
+	<label for="volume">Volume</label><input type="text" name="volume" id="volume">
+	<input type="submit" value="Calculate" id="submit">    </form>
+
+</body>
+</html>

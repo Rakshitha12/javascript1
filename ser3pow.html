@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function number()
+		{
+			for (var i = 1; i < 10; ++i) {
+				for (var j = 0; j < 10; ++j) {
+					for (var k = 0; k < 10; ++k) {
+						var pow = (Math.pow(i,3) + Math.pow(j,3)+Math.pow(k,3));
+						var sum = (1*100 + j * 10 + k);
+						if(pow === sum)
+						{
+							alert(pow);
+						}
+					}
+		
+				}
+			}
+		}
+
+		number();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

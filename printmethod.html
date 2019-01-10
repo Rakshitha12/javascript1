@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function FindAllMethods(obj) {
+		    return Object.getOwnPropertyNames(obj).filter(function(property) {
+		        return typeof obj[property] == "function";
+		    });
+		}
+		
+		alert(FindAllMethods(Math));
+		alert(FindAllMethods(Array));
+		
+		function all_properties(obj) 
+		{
+		 return Object.getOwnPropertyNames(obj);
+		}
+
+		alert(all_properties(Math));
+
+		alert(all_properties(Array));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

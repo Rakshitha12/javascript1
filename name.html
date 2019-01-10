@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function value()
+{
+  var a=document.getElementById("form1");
+  for (var i=0;i<a.length;i++)
+  {
+   if (a.elements[i].value!='Submit')
+    {  
+      alert(a.elements[i].value);
+     }  
+   }
+}
+
+	</script>
+</head>
+<body>
+	<form id="form1" onsubmit="value()">
+		first name:<input type="text" name="first" value="jhon"><br>
+		last name:<input type="text" name="last" value="david"><br>
+		<input type="submit" name="Submit">
+	</form>
+
+</body>
+</html>

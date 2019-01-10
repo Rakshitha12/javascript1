@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+
+Object.objsize = function(Myobj) {
+    var osize = 0, key;
+    for (key in Myobj) {
+        if (Myobj.hasOwnProperty(key)) osize++;
+    }
+    return osize;
+};
+
+var student = { 
+name : "jhon", 
+sclass : "x", 
+rollno : 6 };
+
+var objsize = Object.objsize(student);
+alert(objsize);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
