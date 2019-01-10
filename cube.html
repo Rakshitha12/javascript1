@@ -3,19 +3,25 @@
 <head>
 	<title></title>
 	<script type="text/javascript">
-		function cube(n) {
-		  var sum = 0;
+		function draw() 
+			  {
+			      var canvas = document.getElementById("canvas");
+			      if (canvas.getContext)
+			      {
+			        var context = canvas.getContext("2d");
 
-		  for (var i = 1; i <= n; i++) {
-		    sum += Math.pow(i, 3);
-		  }
-		  return sum;
-		}
-
-		console.log(cube(3))
+			        context.fillStyle = "rgb(256,0,0)";
+			        context.fillRect (15, 10, 55, 50);
+			        
+			        context.fillStyle = "rgba(0, 0, 200, 0.6)";
+			        context.fillRect (35, 30, 55, 50);
+			      }
+			  }
+  
 	</script>
 </head>
-<body>
+<body onload="draw();">
+  <canvas id="canvas" width="150" height="150"></canvas>
 
 </body>
 </html>
