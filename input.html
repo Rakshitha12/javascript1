@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function words()
+		{
+			s= document.getElementById("InputText").value;
+			s = s.replace(/(^\s*)|(\s*$)/gi,"");
+			s = s.replace(/[ ]{2,}/gi," "); 
+			s = s.replace(/\n /,"\n");
+			document.getElementById("value").value = s.split(' ').length;
+		}
+
+	</script>
+</head>
+<body>
+  <textarea id="InputText" cols="30" rows="4"></textarea>
+  <br>
+  <input type="button" name="Convert" value="No. of Words" onClick="words();">
+  <input id = "value" type="text" value="" size="6"> 
+
+</body>
+</html>

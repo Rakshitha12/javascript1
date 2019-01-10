@@ -3,12 +3,14 @@
 <head>
 	<title></title>
 	<script type="text/javascript">
-		function word(letter) {
-			return letter.replace(/[^aeiou]/g, "").length;
-			// body...
-		}
+		function vowel(s) {
 
-		alert(word("javascript"));
+  return s.match(/[aeiou]/gi).length;
+
+}
+
+alert(vowel('welcome to learn javascript'));
+
 	</script>
 </head>
 <body>

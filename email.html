@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function valid_email(s)
+			{
+				var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+				if(mailformat.test(s))
+					{  
+						alert("Valid email address!");  
+					}  
+				else  
+					{  
+						alert("You have entered an invalid email address!");  
+					}
+			}
+
+			valid_email('me-info@example.com');
+
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
